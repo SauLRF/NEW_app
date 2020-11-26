@@ -1,6 +1,8 @@
+$color-text: white;
+$fone-color:#039BE5;
 .Header {
-    color: white;
-    background-color: #039BE5;
+    color: $color-text;
+    background-color: $fone-color;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -21,7 +23,7 @@
   .Header-Icon {
     width: 45px;
     height: 45px;
-    fill: white;
+    fill: $color-text;
     margin-right: 20px;
   }
   
