@@ -1,18 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
+import logo from './logo.svg';
 import './App.scss';
-import Home from "./components/Home/Home.js";
-
+import ItemCard from "./Contact.js";
 
 class App extends React.Component{
-
+  state = {
+      todos:[],
+  }
+  componentDidMount(){
+     fetch("http://localhost:3000/todos.json")
+     .then(r=>r.json())
+     .then(data=>this.setState({todos:data}))
+     
+  }
   render(){
   return(
-    <div className="App">
-          <Home/>
-          sdfsdfd
-    </div>
-    )
-} }
+    <React.Fragment>
+      dsdsd!!!!
+    </React.Fragment>
+  )
+  }
+  
+}
 
 
 export default App;
